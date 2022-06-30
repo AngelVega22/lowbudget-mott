@@ -1,1 +1,180 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap');
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  transition: ease-in-out !important;
+  transition-duration: 0.2s !important;
+  scroll-behavior: smooth;
+
+}
+
+nav {
+  font-size: 18px;
+}
+
+.titulo {
+  font-weight: 700;
+  color: #00849D;
+}
+
+.bg_principal {
+  background-color: #00849D;
+}
+
+.color_princial {
+  color: #00849D;
+}
+
+svg path,
+svg rect {
+  fill: black;
+}
+
+.cursoDetalle {
+  height: 37em;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center;
+}
+
+.filter {
+  height: 37em;
+  background-color: #000000b2;
+  border-radius: 0.1em;
+}
+
+.texto_curso {
+  margin-top: 8em;
+  margin-bottom: 2em;
+  font-size: 16px;
+}
+
+.formulario {
+  margin: 2em;
+  background-color: #ffffffee;
+  padding: 2em;
+  border-radius: 0.3em;
+  margin-top: 3em;
+  margin-bottom: 2em;
+}
+
+.text-subtitulo {
+  font-size: 1.2em;
+}
+
+.aparecer_celular {
+  display: none;
+}
+
+.contenedor-imagen {
+  overflow: hidden;
+  height: 300px;
+  width: 300px;
+
+}
+
+.docente {
+  width: fit-content;
+  border-radius: 50%;
+}
+
+.img_categoria:hover {
+  transform: scale(0.92);
+}
+
+.img_curso:hover {
+  filter: brightness(60%);
+  display: block;
+
+}
+
+.llama-single {
+  padding: 5em !important;
+}
+
+.menu-categorias {
+  cursor: pointer;
+}
+
+.menu-categorias:hover {
+  background-color: #00849D !important;
+  color: white;
+}
+
+.desaparecer {
+  display: none;
+}
+
+.menu-categorias {
+  padding: 1%;
+}
+
+@media only screen and (max-width: 575px) {
+  .llama-single {
+    padding: 1em !important;
+  }
+
+  .filter {
+    background-color: #000000b2;
+    height: fit-content;
+
+  }
+
+  .texto_curso {
+    margin-top: 1em;
+    font-size: 15px;
+  }
+
+  .cursoDetalle {
+    height: fit-content;
+    background-size: 540vw;
+  }
+
+  .text-subtitulo {
+    font-size: 13px !important;
+  }
+
+  .formulario {
+    margin: 1em;
+  }
+
+  .logo {
+    width: 80px;
+
+  }
+
+  .ocultar_celular {
+    display: none !important;
+  }
+
+  .aparecer_celular {
+    display: block;
+  }
+
+  .menu-categorias {
+    padding: 1px;
+    background-color: white;
+    width: 100%;
+    margin: 2px;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+  .formulario {
+    margin: 1em;
+  }
+
+  .llama-single {
+    padding: 1em !important;
+  }
+
+  .espacio_tablet {
+    display: none;
+  }
+
+  .aparecer_tablet {
+    display: block;
+  }
+}

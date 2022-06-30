@@ -1,0 +1,76 @@
+<app-carousel></app-carousel>
+<div class=" text-center">
+  <h1 class="titulo  text-center  mt-5">
+    Categoria de cursos
+  </h1>
+</div>
+<div class="container mt-3 text-justify">
+  <p class="lh-lg text-subtitulo">La escuela Yapay ofrece cursos presenciales y cursos online especializados en cada una
+    de las areas
+    del entorno
+    digital. Nuestro objetivo es que logres dominar cada area de manera profesional. Nuestros docentes de manera
+    práctica
+    te guiarán a lograr tus objetivos comerciales.
+  </p>
+</div>
+<section class="container">
+  <div class="row">
+    <div class="animate__animated animate__fadeInLeft col-6 col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-3  "
+      *ngFor="let category of info.info.categorias">
+      <a type="submit" (click)="buscarProducto(category.categoria)">
+
+        <img src="assets/{{category.foto}}" class="img-fluid w-100 img_categoria" alt="">
+
+
+      </a>
+    </div>
+  </div>
+</section>
+<section class="bg_principal p-2">
+  <h1 class="titulo text-white text-center  mt-5">¿Cual es el procedimiento?</h1>
+  <div class="p-2 ocultar_celular"></div>
+  <div class="container mt-5 mb-5">
+
+    <div class="row ">
+      <div class="col-md-3 col-6">
+        <div class="d-flex justify-content-center mb-3 mt-3">
+
+          <img src="assets/img/icons/tap.png" class="w-25" alt="" srcset="">
+        </div>
+        <div class="d-flex justify-content-center">
+
+          <p class="text-center text-white w-75 text-subtitulo">Elige un curso de tu interés</p>
+        </div>
+      </div>
+      <div class=" col-md-3 col-6">
+        <div class="d-flex justify-content-center mb-3 mt-3">
+
+          <img src="assets/img/icons/agreement.png" class="w-25" alt="" srcset="">
+        </div>
+        <div class="d-flex justify-content-center">
+          <p class="text-center text-white w-75  text-subtitulo">Llena el formulario de inscripción</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="d-flex justify-content-center mb-3 mt-3">
+
+          <img src="assets/img/icons/check-mark.png" class="w-25" alt="" srcset="">
+        </div>
+        <div class="d-flex justify-content-center">
+          <p class="text-center text-white w-75  text-subtitulo">Te enviaremos un mensaje con la información</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="d-flex justify-content-center mb-3 mt-3">
+
+          <img src="assets/img/icons/key.png" class="w-25" alt="" srcset="">
+        </div>
+        <div class="d-flex justify-content-center">
+          <p class="text-center text-white w-75  text-subtitulo">Te brindaremos los accesos para tu aula virtual
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="p-2 mt-5 ocultar_celular"></div>
+</section>

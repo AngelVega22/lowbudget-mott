@@ -1,0 +1,86 @@
+<section *ngIf="cursoDetalle">
+  <section class="cursoDetalle   " [ngStyle]="{'background-image':'url(assets/'+ cursoDetalle.url +')'}">
+
+    <section class=" filter ">
+      <div class="container">
+        <div class="row ">
+          <div class="col-md-6  ">
+            <section class="texto_curso   ">
+              <!-- <img src="assets/{{cursoDetalle.url}}" class="img-fluid" alt="" srcset=""> -->
+              <h1 class="titulo text-white text-start ">
+                {{cursoDetalle.nombre}}
+              </h1>
+              <div class="d-flex justify-content-start">
+                <p class=" text-justify text-white fw-bold lh-lg ">{{cursoDetalle.subtitulo}}.
+                </p>
+              </div>
+
+            </section>
+          </div>
+
+          <div class="col-md-6">
+            <section class="formulario">
+              <form method="POST" netlify>
+                <h3 class=" text-center titulo text-black mb-4">Solicitar Información</h3>
+                <div class=" mb-3">
+
+                  <input type="text" class="form-control" id="formGroupExampleInput" name="name" placeholder="Nombre">
+                </div>
+                <div class="mb-3">
+
+                  <input type="text" class="form-control" id="formGroupExampleInput2" name="lastname"
+                    placeholder="Apellido">
+                </div>
+                <div class="mb-3">
+
+                  <input type="text" class="form-control" id="formGroupExampleInput2" name="email" placeholder="Correo">
+                </div>
+                <div class="mb-3">
+
+                  <input type="text" class="form-control" id="formGroupExampleInput2" name="phone"
+                    placeholder="Celular">
+                </div>
+                <div class="mb-3">
+
+                  <textarea style="resize: none;" class="form-control" name="" id="" name="message" cols="30"
+                    placeholder="Déjanos tus comentarios" rows="4"></textarea>
+                </div>
+                <button class="btn btn-secondary bg_principal text-white w-100" type="submit">enviar</button>
+              </form>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+</section>
+
+<section class="bg_principal">
+  <section class="container">
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="p-3 aparecer_tablet"></div>
+
+        <img src="assets/img/llamas/LLAMA-DOCENTE.svg"
+          class="container animate__animated animate__fadeInLeft p-3 llama-single " alt="">
+      </div>
+      <div class="col-md-6 ">
+        <div class="p-5 ocultar_celular espacio_tablet"></div>
+        <div class="p-3 aparecer_tablet"></div>
+
+        <h1 class="text-white ocultar_celular">¿Qué aprenderé en {{cursoDetalle.nombre}}?</h1>
+        <h1 class="text-white text-center aparecer_celular p-3 mb-3">¿Qué aprenderé en {{cursoDetalle.nombre}}?</h1>
+
+        <div class="p-3 ocultar_celular "></div>
+
+        <p class="text-white">
+          {{cursoDetalle.descripcion}}
+        </p>
+        <div class="p-3 "></div>
+
+      </div>
+
+    </div>
+  </section>
+</section>

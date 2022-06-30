@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { InfoPaginaService } from './services/info-pagina.service';
+import { CoursesService } from './services/courses.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'escuela-virtual';
+  onActive() {
+    window.scroll(0, 0)
+  }
+  constructor(public infoPaginaService: InfoPaginaService,
+    public coursesService: CoursesService) {
+
+  }
 }

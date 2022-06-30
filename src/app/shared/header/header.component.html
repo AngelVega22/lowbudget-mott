@@ -1,0 +1,116 @@
+<!-- <ul class="nav justify-content-end container-fluid mt-1 mb-1 ocultar_celular">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="#"> <a
+        class="navbar-brand   animate__animated animate__jackInTheBox " routerLink="home"><img class="logo mx-5"
+          src="/assets/img/logo.png" width="220" alt=""> </a></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#"></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link text-decoration-none text-muted" target="_blank"> <img width="15" class="mb-0"
+        src="/assets/feather/mail.svg" alt="" srcset="">
+      {{info.info.email}}</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link text-decoration-none text-muted" target="_blank" href="{{info.info.urlWhatsApp}}"> <img
+        width="15" class="mb-1" src="/assets/feather/phone.svg" alt="" srcset="">
+      {{info.info.celular}}</a>
+  </li>
+</ul> -->
+<style>
+  HTML CSSResult Skip Results Iframe EDIT ON .input-wrapper {
+    position: relative;
+    width: 271px;
+  }
+
+  .input {
+    box-sizing: border-box;
+    color: #191919;
+    padding: 15px 15px 15px 35px;
+    width: 100%;
+  }
+
+  .input-icon {
+    color: #191919;
+    position: absolute;
+    width: 35px;
+    height: 20px;
+    left: 96%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  input[type="search"]::-webkit-search-decoration,
+  input[type="search"]::-webkit-search-cancel-button,
+  input[type="search"]::-webkit-search-results-button,
+  input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+  }
+</style>
+<nav class="container-fluid ocultar_celular ">
+
+  <div class="row">
+    <div class="col-4"> <a class="nav-link active" aria-current="page" href="#"> <a
+          class="navbar-brand   animate__animated animate__jackInTheBox " routerLink="home"><img class="logo p-3 mx-5"
+            src="/assets/img/logo.png" width="220" alt=""> </a></a></div>
+    <div class="col-4"></div>
+
+    <div class="col-4">
+      <div class="row">
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col">
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</nav>
+<nav class="navbar navbar-expand-lg bg_principal ">
+  <div class="container-fluid">
+    <div class="aparecer_celular">
+
+      <a class="navbar-brand    animate__animated animate__jackInTheBox " routerLink="home"><img class="logo mb-2"
+          src="/favicon.ico" width="100" alt=""> </a>
+    </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+        <li class="nav-item">
+          <a class="nav-link  mx-3 text-white " routerLink="home" href="#">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  mx-3 text-white" routerLink="cursos">Cursos</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link  mx-3 text-white" routerLink="docentes">Docentes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  mx-3 text-white" target="_blank" href="https://yapaydigital.pe/">Agencia digital</a>
+        </li>
+
+      </ul>
+      <div class="d-flex" role="search">
+        <div class="input-wrapper" type="submit">
+          <input class="form-control me-2" type="search" (keyup.enter)="buscarProducto(txtBuscar.value)"
+            placeholder="Busca cursos" aria-label="Search" #txtBuscar>
+          <svg xmlns="http://www.w3.org/2000/svg" class="input-icon" viewBox="0 0 20 20" fill="currentColor"
+            (click)="buscarProducto(txtBuscar.value)">
+            <path fill-rule="evenodd"
+              d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+              clip-rule="evenodd" />
+          </svg>
+        </div>
+
+        <!-- <button class="btn btn-outline-light titulo " type="submit" (click)="buscarProducto(txtBuscar.value)"><img
+            src="/assets/feather/search.svg" class="mb-1" alt="" srcset=""></button> -->
+      </div>
+    </div>
+  </div>
+</nav>

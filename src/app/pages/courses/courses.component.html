@@ -1,0 +1,100 @@
+<div class="display-6 text-center mt-3 titulo">Cursos online y presenciales</div>
+<div class="text-center mb-3 mt-2">
+  <h6 class="lh-lg">Conoce a detalle cada uno de nuestros cursos
+  </h6>
+  <div class="container">
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col-md-8 col-xs-12 mt-3">
+
+        <input type="text" name="search" class="form-control" placeholder="Busca tu curso" [(ngModel)]="searchText">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <div align="center" class="mt-5" *ngIf="coursesService.cargando">
+    <h2 class="mt-5 titulo">Cargando todos los cursos...</h2>
+    <i><img src="/favicon.ico" alt="" srcset=""></i>
+    <!-- 1 -->
+    <div class="loader loader--style1" title="0">
+      <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px" y="0px" width="40px" height="40px" viewBox="0 0 40 40" enable-background="new 0 0 40 40"
+        xml:space="preserve">
+        <path opacity="0.2" fill="#000"
+          d="M20.201,5.169c-8.254,0-14.946,6.692-14.946,14.946c0,8.255,6.692,14.946,14.946,14.946
+        s14.946-6.691,14.946-14.946C35.146,11.861,28.455,5.169,20.201,5.169z M20.201,31.749c-6.425,0-11.634-5.208-11.634-11.634
+        c0-6.425,5.209-11.634,11.634-11.634c6.425,0,11.633,5.209,11.633,11.634C31.834,26.541,26.626,31.749,20.201,31.749z" />
+        <path fill="#000" d="M26.013,10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0
+        C22.32,8.481,24.301,9.057,26.013,10.047z">
+          <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 20 20" to="360 20 20"
+            dur="0.5s" repeatCount="indefinite" />
+        </path>
+      </svg>
+    </div>
+    <p class="titulo">Espere por favor</p>
+
+  </div>
+
+  <div class="row ">
+    <div class="col-md-4">
+      <h3 class=" mt-5 mb-2 ">Categorías</h3>
+      <section>
+
+        <div class="row ocultar_celular">
+          <div class=" col-sm-6 col-md-12  w-75" *ngFor="let categoria of info.info.categorias">
+            <div (click)="categoryFilter(category.value)" class="menu-categorias alert alert-info">
+              {{categoria.nombre}}
+            </div>
+            <input class="desaparecer" type="text" value="{{categoria.categoria}}" #category>
+          </div>
+        </div>
+        <button class="btn btn-dark bg_principal aparecer_celular text-white" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Ver todas las categorías</button>
+
+        <div class="offcanvas offcanvas-top " tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasTopLabel">Selecciona una categoría</h5>
+
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="row">
+              <div class=" col-sm-6 col-md-12  w-75" *ngFor="let categoria of info.info.categorias">
+                <div (click)="categoryFilter(category.value)" class="menu-categorias alert alert-info">
+                  {{categoria.nombre}}
+                </div>
+                <input class="desaparecer" type="text" value="{{categoria.categoria}}" #category>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </div>
+    <div class="col-md-8">
+
+
+      <div class="mt-5 mb-2 col-xs-8 col-md-8 col-lg-8"
+        *ngFor="let curso of coursesService.cursos |filter: searchText | filter : category">
+        <a class="text-decoration-none " [routerLink]="['/curso',curso.cod]">
+          <div class=" animate__animated animate__fadeInUp shadow-sm">
+            <h1 class="card-title text-center mt-1 h6 mb-1  w-100 titulo  ">{{curso.titulo}} </h1>
+
+            <img src="assets/{{curso.url}}" class="card-img-top img_curso " alt="...">
+            <div class="card-body">
+              <h4 class="card-title text-center mt-1  btn  btn-warning w-100 titulo text-black ">Más información
+              </h4>
+            </div>
+          </div>
+        </a>
+      </div>
+
+
+    </div>
+
+
+  </div>
+</div>

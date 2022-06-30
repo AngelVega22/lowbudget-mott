@@ -1,0 +1,86 @@
+<div class="h1 text-center mt-5 titulo">Nuestros docentes</div>
+<div class="text-center mb-3">
+  <h4 class="lh-lg h5 mb-4">Todo nuestro equipo de docentes son profesionales activos
+  </h4>
+</div>
+
+<section class="container">
+  <h3 class="titulo mb-3">
+    Docentes de Marketing y publicidad
+  </h3>
+  <div class="row">
+    <div class="animate__animated animate__fadeIn col-12  col-sm-6 col-md-6 col-lg-3 col-xl-3 "
+      *ngFor="let equipo of info.info.equipoMarketingPublicidad">
+      <div class="d-flex justify-content-center">
+        <div class="   mb-1">
+          <img src="{{equipo.url}}" class="img-fluid rounded-circle p-3" alt="">
+        </div>
+      </div>
+      <h6 class="text-center titulo">{{equipo.nombre}} </h6>
+    </div>
+  </div>
+</section>
+<section class="container">
+  <h3 class="titulo mt-5 mb-3">
+    Docentes de Fotografía
+  </h3>
+  <div class="row">
+    <div class="animate__animated animate__fadeIn col-12  col-sm-6 col-md-6 col-lg-3 col-xl-3 "
+      *ngFor="let equipo of info.info.fotografia">
+      <div class="d-flex justify-content-center">
+        <div class="    mb-1">
+          <img src="{{equipo.url}}" class="img-fluid rounded-circle p-3" alt="">
+        </div>
+      </div>
+      <h6 class="text-center titulo">{{equipo.nombre}} </h6>
+    </div>
+  </div>
+</section>
+<section class="container">
+  <h3 class="titulo mt-5 mb-3">
+    Docentes de Diseño grafico y Audiovisual
+  </h3>
+  <div class="row">
+    <div class="animate__animated animate__fadeIn col-12  col-sm-6 col-md-6 col-lg-3 col-xl-3 "
+      *ngFor="let equipo of info.info.audiovisual">
+      <div class="d-flex justify-content-center">
+        <div class="   mb-1">
+          <img src="{{equipo.url}}" class="img-fluid rounded-circle p-3" alt="">
+        </div>
+      </div>
+      <h6 class="text-center titulo">{{equipo.nombre}} </h6>
+    </div>
+  </div>
+</section>
+<section class="container">
+  <h3 class="titulo mt-5 mb-3">
+    Docentes de Desarrollo web
+  </h3>
+  <div class="row">
+    <div class="animate__animated animate__fadeIn col-12  col-sm-6 col-md-6 col-lg-3 col-xl-3 "
+      *ngFor="let equipo of info.info.desarrolloWeb">
+      <div class="d-flex justify-content-center">
+        <div class="    mb-1">
+          <img src="{{equipo.url}}" class="img-fluid rounded-circle p-3" alt="">
+        </div>
+      </div>
+      <h6 class="text-center titulo">{{equipo.nombre}} </h6>
+    </div>
+  </div>
+</section>
+<section class="container">
+  <h3 class="titulo mt-5 mb-3">
+    Docentes de Coaching y Aprendizaje
+  </h3>
+  <div class="row">
+    <div class="animate__animated animate__fadeIn col-12  col-sm-6 col-md-6 col-lg-3 col-xl-3 "
+      *ngFor="let equipo of info.info.coachingAprendizaje">
+      <div class="d-flex justify-content-center">
+        <div class="   mb-1">
+          <img src="{{equipo.url}}" class="img-fluid rounded-circle p-3" alt="">
+        </div>
+      </div>
+      <h6 class="text-center titulo">{{equipo.nombre}} </h6>
+    </div>
+  </div>
+</section>

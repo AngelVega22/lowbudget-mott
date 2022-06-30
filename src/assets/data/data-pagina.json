@@ -1,0 +1,159 @@
+{
+  "powered": "Powered by Angel Vega",
+  "address": " Avenida Aviación 2608, San Borja, Lima Perú",
+  "email": "escuela@yapaydigital.pe",
+  "facebook": "https://www.facebook.com/YapayAgenciaDigital",
+  "instagram": "https://www.instagram.com/yapaydigital.pe/",
+  "youtube": "https://www.youtube.com/channel/UC2KALoJzrXvqnS_kb2uZ_yg",
+  "linkedin": "https://www.linkedin.com/company/yapay-agencia-digital/",
+  "urlWhatsApp": "https://api.whatsapp.com/send?phone=51900743252&text=%C2%A1Hola!%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20en%20uno%20de%20sus%20servicios.",
+  "celular": "900743252",
+  "categorias": [
+    {
+      "foto": "img/categorias/DISEÑO-GRAFICO.jpg",
+      "categoria": "disenografico",
+      "nombre": "Diseño Gráfico"
+    },
+    {
+      "foto": "img/categorias/FOTOGRAFIA.jpg",
+      "categoria": "fotografia",
+      "nombre": "Fotografía"
+    },
+    {
+      "foto": "img/categorias/MARKETING-DIGITAL.jpg",
+      "categoria": "marketingdigital",
+      "nombre": "Marketing Digital"
+    },
+    {
+      "foto": "img/categorias/MARKETING-Y-PUBLICIDAD1.jpg",
+      "categoria": "marketingypublicidad",
+      "nombre": "Marketing y publicidad"
+    },
+    {
+      "foto": "img/categorias/WEB-Y-SEO.jpg",
+      "categoria": "web",
+      "nombre": "Desarrollo web"
+    },
+    {
+      "foto": "img/categorias/AUDIOVISUAL.jpg",
+      "categoria": "audiovisual",
+      "nombre": "Audiovisual"
+    },
+    {
+      "foto": "img/categorias/COACHING.jpg",
+      "categoria": "coaching",
+      "nombre": "Coaching"
+    },
+    {
+      "foto": "",
+      "categoria": "",
+      "nombre": "Todos"
+    }
+  ],
+  "equipoMarketingPublicidad": [
+    {
+      "categoria": "Marketing y publicidad",
+      "nombre": "BRUNO HELGUERO",
+      "descripcion": "GERENTE DE MARKETING Y COFUNDADOR",
+      "url": "assets/img/teachers/BRUNO.jpg"
+    },
+    {
+      "categoria": "Marketing y publicidad",
+      "nombre": "STEFANY RAMOS",
+      "descripcion": "GERENTE GENERAL Y COFUNDADORA",
+      "url": "assets/img/teachers/STEFANY.jpg"
+    },
+    {
+      "categoria": "Marketing y publicidad",
+      "nombre": "ALVARO SÁNCHEZ",
+      "descripcion": "DIRECTOR AUDIOVISUAL",
+      "url": "assets/img/teachers/ALVARO.jpg"
+    },
+    {
+      "categoria": "Marketing y publicidad",
+      "nombre": "DANTE LOAYZA",
+      "descripcion": "GERENTE REGIONAL",
+      "url": "assets/img/teachers/DANTE.jpg"
+    }
+  ],
+  "fotografia": [
+    {
+      "categoria": "fotografia",
+      "nombre": "IVÁN URBINA",
+      "descripcion": "GERENTE DE MARKETING Y COFUNDADOR",
+      "url": "assets/img/teachers/IVAN.jpg"
+    },
+    {
+      "categoria": "fotografia",
+      "nombre": "ANTHONY RAMOS",
+      "descripcion": "PRODUCTOR CREATIVO",
+      "url": "assets/img/teachers/ANTHONY.jpg"
+    },
+    {
+      "categoria": "fotografia",
+      "nombre": "ALEJANDRO REYES",
+      "descripcion": "PRODUCTOR PUBLICITARIO",
+      "url": "assets/img/teachers/ALEJANDRO-REYES.jpg"
+    }
+  ],
+  "audiovisual": [
+    {
+      "categoria": "diseño grafico y audiovisual",
+      "nombre": "ALEJANDRO COLAN",
+      "descripcion": "DIRECTOR DE ARTE Y DISEÑADOR GRÁFICO",
+      "url": "assets/img/teachers/ALEJANDRO.jpg"
+    },
+    {
+      "categoria": "diseño grafico y audiovisual",
+      "nombre": "ALVARO SÁNCHEZ",
+      "descripcion": "DIRECTOR AUDIOVISUAL",
+      "url": "assets/img/teachers/ALVARO.jpg"
+    },
+    {
+      "categoria": "diseño grafico y audiovisual",
+      "nombre": "ALEJANDRO REYES",
+      "descripcion": "PRODUCTOR PUBLICITARIO",
+      "url": "assets/img/teachers/ALEJANDRO-REYES.jpg"
+    }
+  ],
+  "desarrolloWeb": [
+    {
+      "categoria": "Desarrollo web",
+      "nombre": "CARLOS JIMENEZ",
+      "descripcion": "GERENTE DE TECNOLOGÍA E INFORMACIÓN Y COFUNDADOR",
+      "url": "assets/img/teachers/CARLOS.jpg"
+    },
+    {
+      "categoria": "Desarrollo web",
+      "nombre": "GABRIEL MARTINEZ",
+      "descripcion": "DESARROLLADOR FRONTEND",
+      "url": "assets/img/teachers/GABRIEL.jpg"
+    },
+    {
+      "categoria": "Desarrollo web",
+      "nombre": "ANGEL VEGA",
+      "descripcion": "DESARROLLADOR FULLSTACK",
+      "url": "assets/img/teachers/ANGEL.jpg"
+    },
+    {
+      "categoria": "Desarrollo web",
+      "nombre": "D-LAND",
+      "descripcion": "DESARROLLADOR BACKEND",
+      "url": "assets/img/teachers/DLAND.jpg"
+    }
+  ],
+  "coachingAprendizaje": [
+    {
+      "categoria": "Coaching y aprendizaje",
+      "nombre": "GONZALO QUINTEROS",
+      "descripcion": "GERENTE DE OPERACIONES",
+      "url": "assets/img/teachers/GONZALO.jpg"
+    },
+    {
+      "categoria": "Coaching y aprendizaje",
+      "nombre": "DANTE LOAYZA",
+      "descripcion": "GERENTE REGIONAL",
+      "url": "assets/img/teachers/DANTE.jpg"
+    }
+  ]
+}
