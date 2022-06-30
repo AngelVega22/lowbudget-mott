@@ -1,0 +1,24 @@
+<section class="formulario">
+  <form #leadsForm="ngForm" (ngSubmit)="registerLead(leadsForm.value)">
+    <h3 class=" text-center titulo text-black mb-4">Solicitar Información</h3>
+    <div class=" mb-3">
+
+      <input type="text" ngModel class="form-control" id="name" name="name" placeholder="Nombre" required>
+    </div>
+
+    <div class="mb-3">
+
+      <input type="text" ngModel class="form-control" id="email" name="email" placeholder="Correo" required>
+    </div>
+    <div class="mb-3">
+
+      <input type="number" ngModel class="form-control" id="phone" name="phone" placeholder="Celular" required>
+    </div>
+    <div class="mb-3">
+
+      <textarea style="resize: none;" class="form-control" ngModel id="message" name="message" cols="30"
+        placeholder="Déjanos tus comentarios" rows="4"></textarea>
+    </div>
+    <button class="btn btn-secondary bg_principal text-white w-100" type="submit">enviar</button>
+  </form>
+</section>

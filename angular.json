@@ -101,6 +101,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "escuela-virtual:build:production",
+            "firebaseProject": "escuela-yapay",
+            "firebaseHostingSite": "escuela-yapay"
+          }
         }
       }
     }

@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "escuela-yapay"
+  },
+  "targets": {
+    "escuela-yapay": {
+      "hosting": {
+        "escuela-virtual": [
+          "escuela-yapay"
+        ]
+      }
+    }
+  }
+}

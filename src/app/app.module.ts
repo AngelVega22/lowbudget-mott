@@ -13,6 +13,11 @@ import { SingleCourseComponent } from './pages/single-course/single-course.compo
 import { SearchComponent } from './components/search/search.component';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { FormsModule } from '@angular/forms';
+import { FormComponent } from './components/form/form.component';
+import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideAnalytics, getAnalytics, ScreenTrackingService, UserTrackingService } from '@angular/fire/analytics';
+import { provideDatabase, getDatabase } from '@angular/fire/database';
 
 @NgModule({
   declarations: [
@@ -25,15 +30,21 @@ import { FormsModule } from '@angular/forms';
     TeachersComponent,
     SingleCourseComponent,
     SearchComponent,
+    FormComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     Ng2SearchPipeModule,
-    FormsModule
+    FormsModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    // provideAnalytics(() => getAnalytics()),
+    provideDatabase(() => getDatabase())
   ],
-  providers: [],
+  providers: [
+    ScreenTrackingService, UserTrackingService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
