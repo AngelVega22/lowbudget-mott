@@ -89,9 +89,7 @@ svg rect {
 
 }
 
-.llama-single {
-  padding: 5em !important;
-}
+
 
 .menu-categorias {
   cursor: pointer;
@@ -111,7 +109,7 @@ svg rect {
 }
 
 .offcanvas {
-  height: 50vh !important;
+  height: 48vh !important;
 }
 
 @media only screen and (max-width: 575px) {
@@ -132,7 +130,7 @@ svg rect {
 
   .cursoDetalle {
     height: fit-content;
-    background-size: 540vw;
+    background-size: 440vw;
   }
 
   .text-subtitulo {

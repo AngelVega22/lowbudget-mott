@@ -18,36 +18,7 @@
       {{info.info.celular}}</a>
   </li>
 </ul> -->
-<style>
-  HTML CSSResult Skip Results Iframe EDIT ON .input-wrapper {
-    position: relative;
-    width: 271px;
-  }
 
-  .input {
-    box-sizing: border-box;
-    color: #191919;
-    padding: 15px 15px 15px 35px;
-    width: 100%;
-  }
-
-  .input-icon {
-    color: #191919;
-    position: absolute;
-    width: 35px;
-    height: 20px;
-    left: 96%;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-
-  input[type="search"]::-webkit-search-decoration,
-  input[type="search"]::-webkit-search-cancel-button,
-  input[type="search"]::-webkit-search-results-button,
-  input[type="search"]::-webkit-search-results-decoration {
-    display: none;
-  }
-</style>
 <nav class="container-fluid ocultar_celular ">
 
   <div class="row">
@@ -61,6 +32,31 @@
         <div class="col"></div>
         <div class="col"></div>
         <div class="col">
+
+
+          <div class="flex-container">
+            <div> <a href="https://www.facebook.com/YapayAgenciaDigital" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="feather feather-facebook">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                </svg>
+
+              </a>
+
+            </div>
+            <div> <a href="https://www.instagram.com/yapaydigital.pe/" target="_blank">
+                <img src="/assets/feather/instagram.svg" class="social-icons-in" alt="">
+              </a></div>
+            <div> <a href="https://www.youtube.com/channel/UC2KALoJzrXvqnS_kb2uZ_yg" target="_blank">
+                <img src="/assets/feather/youtube.svg" class="social-icons-yt" alt="">
+              </a></div>
+            <div> <a href="https://www.linkedin.com/company/yapay-agencia-digital/" target="_blank">
+                <img src="/assets/feather/linkedin.svg" class="social-icons-li" alt="">
+              </a></div>
+          </div>
+
+
         </div>
 
       </div>
@@ -68,7 +64,63 @@
 
   </div>
 </nav>
-<nav class="navbar navbar-expand-lg bg_principal ">
+<nav class="navbar navbar-expand-lg bg_principal  fixed-top aparecer_celular  ">
+
+
+  <div class="container-fluid">
+    <div class="aparecer_celular">
+
+      <a class="navbar-brand    animate__animated animate__jackInTheBox " routerLink="home"><img class="logo mb-2"
+          src="/favicon.ico" width="100" alt=""> </a>
+    </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+        <li class="nav-item">
+          <a class="nav-link  mx-3 text-white text-center nav-hover " routerLink="home" href="#">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  mx-3 text-white text-center nav-hover" routerLink="cursos">Cursos</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link  mx-3 text-white text-center nav-hover" routerLink="docentes">Docentes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  mx-3 text-white text-center nav-hover" target="_blank"
+            href="https://yapaydigital.pe/">Agencia
+            digital</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  mx-3 text-white text-center nav-hover" target="_blank"
+            href="https://yapaydigital.pe/blog/">Blog</a>
+        </li>
+
+      </ul>
+      <div class="d-flex justify-content-center" role="search ">
+        <div class="input-wrapper" type="submit">
+          <input class="form-control me-2" type="search" (keyup.enter)="buscarProducto(txtBuscar.value)"
+            placeholder="Busca cursos" aria-label="Search" #txtBuscar>
+          <svg xmlns="http://www.w3.org/2000/svg" class="input-icon" viewBox="0 0 20 20" fill="currentColor"
+            (click)="buscarProducto(txtBuscar.value)">
+            <path fill-rule="evenodd"
+              d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+              clip-rule="evenodd" />
+          </svg>
+        </div>
+
+        <!-- <button class="btn btn-outline-light titulo " type="submit" (click)="buscarProducto(txtBuscar.value)"><img
+            src="/assets/feather/search.svg" class="mb-1" alt="" srcset=""></button> -->
+      </div>
+    </div>
+  </div>
+</nav>
+<nav class="navbar navbar-expand-lg bg_principal   ocultar_celular  ">
+
+
   <div class="container-fluid">
     <div class="aparecer_celular">
 
@@ -94,6 +146,9 @@
         <li class="nav-item">
           <a class="nav-link  mx-3 text-white" target="_blank" href="https://yapaydigital.pe/">Agencia digital</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link  mx-3 text-white" target="_blank" href="https://yapaydigital.pe/blog/">Blog</a>
+        </li>
 
       </ul>
       <div class="d-flex" role="search">
@@ -107,10 +162,8 @@
               clip-rule="evenodd" />
           </svg>
         </div>
-
-        <!-- <button class="btn btn-outline-light titulo " type="submit" (click)="buscarProducto(txtBuscar.value)"><img
-            src="/assets/feather/search.svg" class="mb-1" alt="" srcset=""></button> -->
       </div>
     </div>
   </div>
 </nav>
+<div class="p-5 aparecer_celular"></div>

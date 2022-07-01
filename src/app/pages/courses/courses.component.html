@@ -40,7 +40,9 @@
 
   <div class="row ">
     <div class="col-md-4">
-      <h3 class=" mt-5 mb-2 ">Categorías</h3>
+      <h3 class=" mt-5 mb-2 ocultar_celular">Categorías</h3>
+
+      <h3 class=" mt-5 mb-2 text-center aparecer_celular">Categorías</h3>
       <section>
 
         <div class="row ocultar_celular">
@@ -51,8 +53,11 @@
             <input class="desaparecer" type="text" value="{{categoria.categoria}}" #category>
           </div>
         </div>
-        <button class="btn btn-dark bg_principal aparecer_celular text-white" type="button" data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Ver todas las categorías</button>
+        <div class="d-flex justify-content-center">
+          <button class="btn btn-dark bg_principal aparecer_celular text-white" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Ver todas las categorías</button>
+
+        </div>
 
         <div class="offcanvas offcanvas-top " tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
           <div class="offcanvas-header">
@@ -61,9 +66,17 @@
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body">
-            <div class="row">
+            <div class="row ocultar_celular">
               <div class=" col-sm-6 col-md-12  w-75" *ngFor="let categoria of info.info.categorias">
                 <div (click)="categoryFilter(category.value)" class="menu-categorias alert alert-info">
+                  {{categoria.nombre}}
+                </div>
+                <input class="desaparecer" type="text" value="{{categoria.categoria}}" #category>
+              </div>
+            </div>
+            <div class="aparecer_celular">
+              <div class="w-100 " *ngFor="let categoria of info.info.categorias">
+                <div (click)="categoryFilter(category.value)" class="menu-categorias-movil text-center">
                   {{categoria.nombre}}
                 </div>
                 <input class="desaparecer" type="text" value="{{categoria.categoria}}" #category>
