@@ -15,7 +15,7 @@
 </div>
 <section class="container">
   <div class="row">
-    <div class="animate__animated animate__fadeInLeft col-6 col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-3  "
+    <div class="animate__animated animate__fadeIn col-6 col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-3  "
       *ngFor="let category of info.info.categorias">
       <a type="submit" (click)="buscarProducto(category.categoria)">
 
@@ -74,3 +74,5 @@
   </div>
   <div class="p-2 mt-5 ocultar_celular"></div>
 </section>
+
+<app-packs></app-packs>

@@ -1,0 +1,18 @@
+<section class="container">
+  <div class=" text-center">
+    <h1 class="titulo  text-center  mt-5">
+      Paquetes de estudio
+    </h1>
+  </div>
+  <div class="row mt-5 mb-5">
+    <div class="animate__animated animate__fadeIn col-12 col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-4  "
+      *ngFor="let pack of info.info.packs">
+      <!-- <a type="submit" (click)="buscarProducto(pack.categoria)"> -->
+
+      <img src="assets/{{pack.foto}}" class="img-fluid p-3  img_pack" alt="">
+
+
+      <!-- </a> -->
+    </div>
+  </div>
+</section>

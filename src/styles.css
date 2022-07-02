@@ -1,12 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
 
 * {
-  /* font-family: 'Montserrat', sans-serif; */
+  font-family: 'Montserrat', sans-serif;
 
   transition: ease-in-out !important;
   transition-duration: 0.2s !important;
   scroll-behavior: smooth;
+
 
 }
 
@@ -15,7 +17,7 @@ nav {
 }
 
 .titulo {
-  font-weight: 700;
+  font-weight: 900;
   color: #00849D;
 }
 
@@ -113,6 +115,13 @@ nav {
 
 
 @media only screen and (max-width: 575px) {
+  .img_pack:hover {
+    background-color: #ffc107;
+    transform: scale(0.9) !important;
+    transition: 0.5s !important;
+
+  }
+
   .llama-single {
     padding: 1em !important;
   }

@@ -50,6 +50,53 @@
       "nombre": "Todos"
     }
   ],
+  "packs": [
+    {
+      "foto": "img/packs/PACK-AUDIOVISUAL-EXPERTO.jpg",
+      "categoria": "disenografico",
+      "nombre": "Diseño Gráfico"
+    },
+    {
+      "foto": "img/packs/PACK-EMPRENDEDOR-DIGITAL.jpg",
+      "categoria": "fotografia",
+      "nombre": "Fotografía"
+    },
+    {
+      "foto": "img/packs/PACK-FOTO-PROFESIONAL.jpg",
+      "categoria": "marketingdigital",
+      "nombre": "Marketing Digital"
+    },
+    {
+      "foto": "img/packs/PACK-FULLSTACK.jpg",
+      "categoria": "marketingypublicidad",
+      "nombre": "Marketing y publicidad"
+    },
+    {
+      "foto": "img/packs/PACK-ILLUSTRADOR.jpg",
+      "categoria": "web",
+      "nombre": "Desarrollo web"
+    },
+    {
+      "foto": "img/packs/PACK-LIDERAZGO.jpg",
+      "categoria": "audiovisual",
+      "nombre": "Audiovisual"
+    },
+    {
+      "foto": "img/packs/PACK-MARKETING-DIGITAL.jpg",
+      "categoria": "coaching",
+      "nombre": "Coaching"
+    },
+    {
+      "foto": "img/packs/PACK-MARKETING-YAPAY.jpg",
+      "categoria": "coaching",
+      "nombre": "Coaching"
+    },
+    {
+      "foto": "",
+      "categoria": "",
+      "nombre": "Todos"
+    }
+  ],
   "equipoMarketingPublicidad": [
     {
       "categoria": "Marketing y publicidad",

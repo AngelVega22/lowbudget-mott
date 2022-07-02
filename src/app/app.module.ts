@@ -18,6 +18,7 @@ import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideAnalytics, getAnalytics, ScreenTrackingService, UserTrackingService } from '@angular/fire/analytics';
 import { provideDatabase, getDatabase } from '@angular/fire/database';
+import { PacksComponent } from './components/packs/packs.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { provideDatabase, getDatabase } from '@angular/fire/database';
     SingleCourseComponent,
     SearchComponent,
     FormComponent,
+    PacksComponent,
   ],
   imports: [
     BrowserModule,

@@ -5,6 +5,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { SingleCourseComponent } from './pages/single-course/single-course.component';
 import { TeachersComponent } from './pages/teachers/teachers.component';
 import { SearchComponent } from './components/search/search.component';
+import { PacksComponent } from './components/packs/packs.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'docentes', component: TeachersComponent },
   { path: 'buscar/:termino', component: SearchComponent },
   { path: 'curso/:id', component: SingleCourseComponent },
+  { path: 'paquetes', component: PacksComponent },
   { path: '**', pathMatch: 'full', redirectTo: '' }
 ];
 
