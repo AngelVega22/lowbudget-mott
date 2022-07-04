@@ -53,47 +53,47 @@
   "packs": [
     {
       "foto": "img/packs/PACK-AUDIOVISUAL-EXPERTO.jpg",
-      "categoria": "disenografico",
-      "nombre": "Diseño Gráfico"
+      "pack": "pack-audiovisual_experto",
+      "nombre": "Audiovisual experto"
     },
     {
       "foto": "img/packs/PACK-EMPRENDEDOR-DIGITAL.jpg",
-      "categoria": "fotografia",
-      "nombre": "Fotografía"
+      "pack": "pack_emprendedor_digital",
+      "nombre": "emprendedor digital"
     },
     {
       "foto": "img/packs/PACK-FOTO-PROFESIONAL.jpg",
-      "categoria": "marketingdigital",
-      "nombre": "Marketing Digital"
+      "pack": "pack_foto_profesional",
+      "nombre": "Foto profesional"
     },
     {
       "foto": "img/packs/PACK-FULLSTACK.jpg",
-      "categoria": "marketingypublicidad",
-      "nombre": "Marketing y publicidad"
+      "pack": "pack_fullstack",
+      "nombre": "Fullstack"
     },
     {
       "foto": "img/packs/PACK-ILLUSTRADOR.jpg",
-      "categoria": "web",
-      "nombre": "Desarrollo web"
+      "pack": "pack_ilustrador",
+      "nombre": "Ilustrador"
     },
     {
       "foto": "img/packs/PACK-LIDERAZGO.jpg",
-      "categoria": "audiovisual",
-      "nombre": "Audiovisual"
+      "pack": "pack_liderazgo",
+      "nombre": "Liderazgo"
     },
     {
       "foto": "img/packs/PACK-MARKETING-DIGITAL.jpg",
-      "categoria": "coaching",
-      "nombre": "Coaching"
+      "pack": "pack_marketing_digital",
+      "nombre": "Marketing Digital"
     },
     {
       "foto": "img/packs/PACK-MARKETING-YAPAY.jpg",
-      "categoria": "coaching",
-      "nombre": "Coaching"
+      "pack": "pack_marketing_yapay",
+      "nombre": "Marketing Yapay"
     },
     {
       "foto": "",
-      "categoria": "",
+      "pack": "",
       "nombre": "Todos"
     }
   ],

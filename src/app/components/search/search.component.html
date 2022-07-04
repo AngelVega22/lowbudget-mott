@@ -8,7 +8,7 @@
 
 </section>
 <ng-template #wrongSearch>
-  <section class="container">
+  <section>
     <div *ngIf="info.info.categorias?.length ">
       <div class="animate__animated animate__fadeInLeft" *ngFor="let category of info.info.categorias">
         <div *ngIf="category.categoria == termino">
@@ -20,6 +20,29 @@
           <h2 class="titulo mb-3">
             {{category.nombre}}
           </h2>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="info.info.packs?.length ">
+      <div class="animate__animated animate__fadeInLeft" *ngFor="let pack of info.info.packs">
+        <div *ngIf="pack.pack == termino">
+          <section>
+            <section class="packDetalle" [ngStyle]="{'background-image':'url(assets/'+ pack.foto +')'}">
+
+              <section class="">
+                <div class="container">
+                  <div class="row ">
+                    <div class="col-md-6 col-lg-6 col-xl-7">
+                    </div>
+
+                    <div class="col-md-6 col-lg-6 col-xl-5">
+                      <app-form></app-form>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </section>
+          </section>
         </div>
       </div>
     </div>

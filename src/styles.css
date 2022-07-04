@@ -25,17 +25,34 @@ nav {
   background-color: #00849D;
 }
 
+.bg_secundario {
+  background-color: #003842
+}
+
+
 .color_princial {
   color: #00849D;
 }
 
+.color_secundario {
+  color: #003842
+}
 
 
 .cursoDetalle {
-  height: 37em;
+  height: 32em;
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: center;
+}
+
+.packDetalle {
+  background-color: #003842;
+  height: 32em;
+  background-size: 65vw;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: left;
 }
 
 .filter {
@@ -80,7 +97,12 @@ nav {
 }
 
 .img_categoria:hover {
-  transform: scale(0.92);
+  /* transform: scale(0.92); */
+  background-color: #ffc107;
+  background: #ffc107;
+  filter: brightness(105%);
+  transform: scale(1.15);
+  /* transition: 0.5s !important; */
 }
 
 .img_curso:hover {
@@ -89,6 +111,15 @@ nav {
 
 }
 
+.categoria_container {
+  overflow: hidden;
+}
+
+.img_categoria {
+  width: 100%;
+  /* height: 50%; */
+  object-fit: contain;
+}
 
 
 .menu-categorias {
@@ -115,6 +146,22 @@ nav {
 
 
 @media only screen and (max-width: 575px) {
+  .img_categoria:hover {
+    transform: scale(1.01);
+
+  }
+
+  .categoria_container {
+    max-height: 300px;
+    overflow: hidden;
+  }
+
+  .img_categoria {
+    width: 100%;
+    height: 50%;
+    object-fit: contain;
+  }
+
   .img_pack:hover {
     background-color: #ffc107;
     transform: scale(0.9) !important;
@@ -127,7 +174,7 @@ nav {
   }
 
   .filter {
-    background-color: #000000b2;
+    background-color: #00000056;
     height: fit-content;
 
   }
@@ -151,7 +198,7 @@ nav {
   }
 
   .logo {
-    width: 80px;
+    width: 50px;
 
   }
 
@@ -191,5 +238,9 @@ nav {
 
   .aparecer_tablet {
     display: block;
+  }
+
+  .ocultar_tablet {
+    display: none;
   }
 }

@@ -10,7 +10,7 @@ export class CoursesService {
   cursos: ICourse[] = [];
   cursoFiltrado: ICourse[] = []
   categoriaFiltrado: ICourse[] = []
-
+  packageFiltrado: ICourse[] = []
   constructor(private http: HttpClient) {
     this.cargarCursos()
 
@@ -22,11 +22,11 @@ export class CoursesService {
       this.http.get('https://escuela-yapay-default-rtdb.firebaseio.com/cursos_idx.json')
         .subscribe((resp: any) => {
           // console.log(resp)
-          setTimeout(() => {
-            this.cargando = false
-            this.cursos = resp
-            resolve();
-          }, 1000)
+          // setTimeout(() => {
+          this.cargando = false
+          this.cursos = resp
+          // }, 1000)
+          resolve();
         })
     })
   }
@@ -38,6 +38,7 @@ export class CoursesService {
   buscarCurso(termino: string) {
     if (this.cursos.length === 0) {
       this.cargarCursos().then(() => {
+        this.filtarCursos(termino)
 
       })
     } else {
@@ -54,12 +55,17 @@ export class CoursesService {
 
       const tituloLower = curso.titulo?.toLocaleLowerCase()
 
+      if (curso.pack == termino || curso.pack_two == termino || curso.pack_three == termino) {
+        this.cursoFiltrado.push(curso)
+        // console.log(this.packageFiltrado)
+      }
       if (curso.categoria?.indexOf(termino) >= 0 || tituloLower.indexOf(termino) >= 0) {
         this.cursoFiltrado.push(curso)
 
       }
       if (curso.categoria == termino) {
         this.categoriaFiltrado.push(curso)
+        // console.log(this.categoriaFiltrado)
       }
     })
   }

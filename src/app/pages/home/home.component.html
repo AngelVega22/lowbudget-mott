@@ -15,13 +15,11 @@
 </div>
 <section class="container">
   <div class="row">
-    <div class="animate__animated animate__fadeIn col-6 col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-3  "
+    <div
+      class="animate__animated animate__fadeIn col-12 col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-3  categoria_container "
       *ngFor="let category of info.info.categorias">
       <a type="submit" (click)="buscarProducto(category.categoria)">
-
-        <img src="assets/{{category.foto}}" class="img-fluid w-100 img_categoria" alt="">
-
-
+        <img src="assets/{{category.foto}}" class=" img_categoria" *ngIf="category.foto" alt="">
       </a>
     </div>
   </div>

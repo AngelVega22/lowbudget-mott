@@ -18,7 +18,7 @@ export class HomeComponent implements OnInit {
       return;
     }
 
-    this.router.navigate(['/buscar', termino])
+    this.router.navigate(['/cursos', termino])
     // console.log(termino)
   }
 }

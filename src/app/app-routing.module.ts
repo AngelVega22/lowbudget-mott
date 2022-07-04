@@ -11,7 +11,7 @@ const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'cursos', component: CoursesComponent },
   { path: 'docentes', component: TeachersComponent },
-  { path: 'buscar/:termino', component: SearchComponent },
+  { path: 'cursos/:termino', component: SearchComponent },
   { path: 'curso/:id', component: SingleCourseComponent },
   { path: 'paquetes', component: PacksComponent },
   { path: '**', pathMatch: 'full', redirectTo: '' }

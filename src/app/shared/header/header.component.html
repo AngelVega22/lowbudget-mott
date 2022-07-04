@@ -14,7 +14,7 @@
               <div class="d-flex">
                 <img src="/assets/feather/mail.svg" class="mb-1" alt="">
                 <div class="email-header mt-2">
-                  <p>escuelay@yapaydigital.pe</p>
+                  <p>escuela@yapaydigital.pe</p>
                 </div>
               </div>
             </div>
@@ -101,6 +101,9 @@
           <a class="nav-link  mx-3 text-white text-center nav-hover" routerLink="docentes">Docentes</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link  mx-3 text-white" routerLink="paquetes">Paquetes</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link  mx-3 text-white text-center nav-hover" target="_blank"
             href="https://yapaydigital.pe/">Agencia
             digital</a>
@@ -167,17 +170,19 @@
       </ul>
       <div class="d-flex" role="search">
         <div class="input-wrapper" type="submit">
-          <input class="form-control me-2" type="search" (keyup.enter)="buscarProducto(txtBuscar.value)"
-            placeholder="Busca cursos" aria-label="Search" #txtBuscar>
+          <input class="form-control me-2" type="search" (keyup.enter)="buscarProducto(txtBuscarPC.value)"
+            placeholder="Busca cursos" #txtBuscarPC>
           <svg xmlns="http://www.w3.org/2000/svg" class="input-icon" viewBox="0 0 20 20" fill="currentColor"
-            (click)="buscarProducto(txtBuscar.value)">
+            (click)="buscarProducto(txtBuscarPC.value)">
             <path fill-rule="evenodd"
               d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
               clip-rule="evenodd" />
           </svg>
+          <!-- <button class="btn btn-outline-light titulo " type="submit" (click)="buscarProducto(txtBuscar.value)"><img
+              src="/assets/feather/search.svg" class="mb-1" alt="" srcset=""></button> -->
         </div>
       </div>
     </div>
   </div>
 </nav>
-<div class="p-5 aparecer_celular"></div>
+<div class="p-4 aparecer_celular"></div>

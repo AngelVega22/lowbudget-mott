@@ -7,12 +7,12 @@
   <div class="row mt-5 mb-5">
     <div class="animate__animated animate__fadeIn col-12 col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-4  "
       *ngFor="let pack of info.info.packs">
-      <!-- <a type="submit" (click)="buscarProducto(pack.categoria)"> -->
+      <a type="submit" (click)="buscarProducto(pack.pack)">
 
-      <img src="assets/{{pack.foto}}" class="img-fluid p-3  img_pack" alt="">
+        <img src="assets/{{pack.foto}}" class="img-fluid p-3  img_pack" alt="">
 
 
-      <!-- </a> -->
+      </a>
     </div>
   </div>
 </section>

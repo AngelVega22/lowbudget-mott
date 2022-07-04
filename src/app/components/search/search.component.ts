@@ -18,7 +18,7 @@ export class SearchComponent implements OnInit {
       .subscribe(params => {
         this.termino = params['termino']
         console.log(this.termino)
-        // console.log(params['termino'])
+        console.log(params['termino'])
         this.coursesService.buscarCurso(params['termino'])
       })
   }
