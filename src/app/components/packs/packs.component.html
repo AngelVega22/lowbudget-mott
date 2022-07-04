@@ -1,18 +1,70 @@
-<section class="container">
-  <div class=" text-center">
-    <h1 class="titulo  text-center  mt-5">
-      Paquetes de estudio
-    </h1>
-  </div>
-  <div class="row mt-5 mb-5">
-    <div class="animate__animated animate__fadeIn col-12 col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-4  "
-      *ngFor="let pack of info.info.packs">
-      <a type="submit" (click)="buscarProducto(pack.pack)">
+<section *ngIf="detalle == 'yapay' else paquetes">
+  <h1 class="titulo color_secondario  text-center  mt-3 ocultar_celular">
+    Nuestros Paquetes de estudio
+  </h1>
+  <h1 class="titulo  text-center  mt-5 aparecer_celular">
+    Paquetes de estudio
+  </h1>
+  <p class="text-center h6 mb-3">¡Aprovecha estas promociones y especializate!</p>
 
-        <img src="assets/{{pack.foto}}" class="img-fluid p-3  img_pack" alt="">
+  <div class="container">
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col-md-8 col-xs-12 mt-3">
 
-
-      </a>
+        <input type="text" name="search" class="form-control" placeholder="Buscar cursos y promociones"
+          [(ngModel)]="searchText">
+      </div>
     </div>
   </div>
+  <section class="container">
+    <div class=" text-center">
+    </div>
+
+    <div class="row mt-5 mb-5">
+      <div class="  col-md-1"></div>
+      <div class="col-sm-12 col-md-10">
+
+        <div class="animate__animated animate__fadeIn" *ngFor="let pack of info.info.packs | filter: searchText ">
+          <a type="submit" (click)="buscarProducto(pack.pack)">
+            <div class="p-4 ocultar_celular">
+              <h4 *ngIf="pack.foto" class="card-title text-center mt-1  btn  btn-warning w-100 titulo text-black ">Más
+                información
+              </h4>
+              <img src="assets/{{pack.foto}}" class="img-fluid   " alt="{{pack.foto}}">
+            </div>
+            <div class="p-2 aparecer_celular">
+              <h4 *ngIf="pack.foto" class="card-title text-center mt-1  btn  btn-warning w-100 titulo text-black ">Más
+                información
+              </h4>
+              <img src="assets/{{pack.foto}}" class="img-fluid   " alt="">
+            </div>
+          </a>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
 </section>
+
+
+<ng-template #paquetes>
+  <section class="container">
+    <div class=" text-center">
+
+    </div>
+    <div class="row mt-5 mb-5">
+      <div class="animate__animated animate__fadeIn col-12 col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-4  "
+        *ngFor="let pack of info.info.packs">
+        <a type="submit" (click)="buscarProducto(pack.pack)">
+
+          <img src="assets/{{pack.foto}}" class="img-fluid p-3  img_pack" alt="">
+
+
+        </a>
+      </div>
+    </div>
+  </section>
+</ng-template>

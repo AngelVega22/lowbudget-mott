@@ -18,7 +18,7 @@ nav {
 
 .titulo {
   font-weight: 900;
-  color: #00849D;
+  color: #003842;
 }
 
 .bg_principal {
@@ -152,14 +152,16 @@ nav {
   }
 
   .categoria_container {
-    max-height: 300px;
+    max-height: 200px;
     overflow: hidden;
+    object-fit: cover;
   }
 
   .img_categoria {
-    width: 100%;
-    height: 50%;
-    object-fit: contain;
+    margin-left: 15vw;
+    width: 70%;
+    height: 90%;
+    object-fit: cover;
   }
 
   .img_pack:hover {
@@ -187,6 +189,12 @@ nav {
   .cursoDetalle {
     height: fit-content;
     background-size: 440vw;
+  }
+
+  .packDetalle {
+    height: fit-content;
+    background-size: 500vw;
+    background-position: right;
   }
 
   .text-subtitulo {
@@ -242,5 +250,11 @@ nav {
 
   .ocultar_tablet {
     display: none;
+  }
+
+  .packDetalle {
+    height: fit-content;
+    background-size: 200vw;
+    background-position: center;
   }
 }

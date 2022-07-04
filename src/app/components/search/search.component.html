@@ -11,7 +11,7 @@
   <section>
     <div *ngIf="info.info.categorias?.length ">
       <div class="animate__animated animate__fadeInLeft" *ngFor="let category of info.info.categorias">
-        <div *ngIf="category.categoria == termino">
+        <div *ngIf="category.categoria == termino" class="container">
           <div class="p-2"></div>
           <h4 class="lh-1 mt-5">
             Cursos de <br>
@@ -26,6 +26,8 @@
     <div *ngIf="info.info.packs?.length ">
       <div class="animate__animated animate__fadeInLeft" *ngFor="let pack of info.info.packs">
         <div *ngIf="pack.pack == termino">
+          <div class="p-2 aparecer_celular"></div>
+
           <section>
             <section class="packDetalle" [ngStyle]="{'background-image':'url(assets/'+ pack.foto +')'}">
 
@@ -35,7 +37,9 @@
                     <div class="col-md-6 col-lg-6 col-xl-7">
                     </div>
 
-                    <div class="col-md-6 col-lg-6 col-xl-5">
+                    <div class="col-md-6 col-lg-6 col-xl-5 ">
+                      <div class="p-3 aparecer_celular "></div>
+
                       <app-form></app-form>
                     </div>
                   </div>

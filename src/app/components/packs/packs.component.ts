@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { InfoPaginaService } from 'src/app/services/info-pagina.service';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-packs',
@@ -9,9 +9,18 @@ import { Router } from '@angular/router';
 })
 export class PacksComponent implements OnInit {
 
-  constructor(public info: InfoPaginaService, public router: Router) { }
+  detalle: any
+  searchText: any
+
+  constructor(private route: ActivatedRoute, public info: InfoPaginaService, public router: Router) { }
 
   ngOnInit(): void {
+    this.route.params
+      .subscribe(params => {
+        this.detalle = params['detalle']
+        // console.log("YAPAY =")
+        // console.log(this.detalle)
+      })
   }
   buscarProducto(termino: string) {
     if (termino.length < 1) {
@@ -22,4 +31,5 @@ export class PacksComponent implements OnInit {
     console.log(termino)
   }
 }
+
 

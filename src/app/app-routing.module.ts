@@ -13,7 +13,7 @@ const routes: Routes = [
   { path: 'docentes', component: TeachersComponent },
   { path: 'cursos/:termino', component: SearchComponent },
   { path: 'curso/:id', component: SingleCourseComponent },
-  { path: 'paquetes', component: PacksComponent },
+  { path: 'paquetes/:detalle', component: PacksComponent },
   { path: '**', pathMatch: 'full', redirectTo: '' }
 ];
 

@@ -1,4 +1,5 @@
 export interface IInfoPagina {
+  name?: string,
   powered?: string,
   address?: string,
   email?: string,

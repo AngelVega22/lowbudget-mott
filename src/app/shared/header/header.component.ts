@@ -15,12 +15,12 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
   buscarProducto(termino: string) {
-    console.log(termino)
+    // console.log(termino)
     if (termino.length < 1) {
       return;
     }
 
     this.router.navigate(['/cursos', termino])
-    console.log(termino)
+    // console.log(termino)
   }
 }
