@@ -19,6 +19,7 @@ import { environment } from '../environments/environment';
 import { provideAnalytics, getAnalytics, ScreenTrackingService, UserTrackingService } from '@angular/fire/analytics';
 import { provideDatabase, getDatabase } from '@angular/fire/database';
 import { PacksComponent } from './components/packs/packs.component';
+import { ThankyouComponent } from './pages/thankyou/thankyou.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { PacksComponent } from './components/packs/packs.component';
     SearchComponent,
     FormComponent,
     PacksComponent,
+    ThankyouComponent,
   ],
   imports: [
     BrowserModule,

@@ -33,7 +33,7 @@ export class FormComponent implements OnInit {
         message: value.message
       });
       alert('Registro correcto')
-      this.router.navigate(['/'])
+      this.router.navigate(['/gracias'])
 
     } else {
       alert('Debe ingresar datos')
